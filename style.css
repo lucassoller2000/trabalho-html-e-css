@@ -1,0 +1,309 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	background-color: #F9F9F9;
+}
+
+.container{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container img{
+	height: 70%;
+}
+
+.navbar{
+	position: fixed;
+	display: flex;
+	width:100%;
+	height: 60px;
+	background: #9A0000;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 30pt;
+	font-family: opensans,sans-serif;
+	z-index: 1;
+}
+
+.navbar--content{
+	height: 100%;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: white;
+	font-size: 30pt;
+	font-family: opensans,sans-serif;
+	
+}
+
+.menu{
+	position: absolute;
+	left: 10px;
+}
+
+.menu:hover .menu--content{
+    display: block;
+}
+
+.menu--content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu--content a{
+	color: #9A0000;
+    padding: 12px 16px;
+    text-decoration: none;
+	display: block;
+	font-size: 20px;
+}
+
+.menu h3{
+	font-size: 20px;
+}
+
+.logo{
+	position: absolute;
+	left: 90px;
+}
+
+.categoria{
+	margin-top: 100px;
+}
+
+.content{
+	flex: 1;
+	background-color: #F9F9F9;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.header{
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+	border-bottom: 1px solid #E1E1E1;;
+}
+
+.header--titulo{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header--titulo h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+.header--titulo h2{
+	font-size: 20px;
+	text-align: center;
+	color: #929292;
+}
+
+.noticia{
+	margin-top: 20px;
+	width: 45%;
+}
+
+.noticia--content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.noticia p{
+	padding-top: 5px;
+	font-size: 20px;
+	color: rgb(65, 61, 61);
+}
+
+.noticia img{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	padding-bottom: 20px;
+}
+
+span{
+	color: #9A0000;
+}
+
+.news{
+	margin-top: 130px;
+	width: 45%;
+	height: 560px;
+	background: white;
+	border: 1px solid #E1E1E1;
+	border-radius: 5px;
+	margin-bottom: 50px;
+	margin-right: 10px;
+}
+
+.news--content h2{
+	color: #929292;
+	font-size: 10pt;
+}
+
+.news--content{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+.news div h1{
+	color:#C4170C;
+	font-size: 40px;
+}
+
+.images{
+	margin-top: 130px;
+	width: 45%;
+	height: 560px;
+	margin-bottom: 1px;
+	overflow: hidden;
+
+}
+
+.first{
+	float: left;
+	width: 90%;
+	height: 90%;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+div img{
+    width: 170px;
+    height: 100px;
+    float: right;
+}
+.image{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	color: white;
+	position: relative;
+
+}
+
+.image img{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+a{
+	text-decoration: none;
+}
+
+.sobre{
+	display: flex;
+	align-items: center;
+	height: 50px;
+	color: #4B4B4B;
+}
+
+.image:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.image--text{
+	padding: 20px;
+	position: absolute;
+	color: white;
+}
+
+.image--content{
+	bottom: 0;
+	position: absolute;
+	color: white;
+}
+.image--content--text{
+	margin-left: 22px;
+	font-weight: bold;
+	width:80%;
+	font-size: 40px;
+	border-bottom: 1px solid gray;
+}
+
+.posts{
+	width: 1340px;
+	background-color: #F9F9F9;
+}
+
+.post{
+	margin-left: 62px;
+	width: 60%;
+	display: flex;
+	margin-bottom: 7px;
+	border-bottom: 1px solid #AFAFAF;;
+}
+
+.post--imagem{
+	width: 338px;
+	height: 190px;
+}
+
+.post--imagem img{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+
+.post--content{
+	flex: 1;
+	margin-left: 20px;
+}
+
+.post--content h1{
+	font-size: 24px;
+	color: #C4170C;
+}
+
+h5 a{
+	color: white;
+}
+
+.post--content h2{
+	font-size: 15px;
+	color: #A3A3A3;
+}
+
+.post--content h3{
+	font-size: 13px;
+	color: #373737;
+}
+
+.post--content h4{
+	font-size: 12px;
+	color: #AFAFAF;
+}
+
+.subtitulo{
+	margin-top: -10px;
+}
+
+.post--footer{
+	padding-bottom: 10px;
+}
